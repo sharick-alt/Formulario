@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <form class="formulario" action="#" method="post">
+      <h1>Formulario de Registro</h1>
+      <p class="subtitulo">Completa tus datos personales</p>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="tipoDocumento">Tipo de Documento</label>
+          <select id="tipoDocumento" name="tipoDocumento" required>
+            <option value="">Selecciona una opción</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="cedula">Cédula de Ciudadanía</option>
+            <option value="ti">Tarjeta de Identidad</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" name="dni" required>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="fechaNacimiento">Fecha de Nacimiento</label>
+          <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Número de Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required>
+        </div>
+      </div>
+
+      <div class="campo campo-completo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="fila">
+        <div class="campo">
+          <label for="pais">País de Domicilio</label>
+          <input type="text" id="pais" name="pais" required>
+        </div>
+
+        <div class="campo">
+          <label for="ciudad">Ciudad de Domicilio</label>
+          <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+      </div>
+
+      <div class="campo-check">
+        <input type="checkbox" id="tratamientoDatos" name="tratamientoDatos" required>
+        <label for="tratamientoDatos">Acepto el tratamiento de mis datos personales</label>
+      </div>
+
+      <button type="submit" class="boton-enviar">Enviar</button>
+    </form>
+  </main>
+
+</body>
+</html>
